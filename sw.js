@@ -4,8 +4,7 @@ self.addEventListener("install", e => {
       cache.addAll([
         "./",
         "./index.html",
-        "./style.css",
-        "./script.js"
+        "./App.js"
       ])
     )
   )
