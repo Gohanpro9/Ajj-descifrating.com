@@ -72,21 +72,7 @@
 </head>
 <body>
 
-<p class="version" id="cacheVersion"></p>
-
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js").then(reg => {
-    if (navigator.serviceWorker.controller) {
-      navigator.serviceWorker.controller.postMessage("getCacheName")
-    }
-  })
-
-  navigator.serviceWorker.addEventListener("message", e => {
-    document.getElementById("cacheVersion").textContent = e.data.cacheName
-  })
-}
-</script>
+<p class="version">V0.6</p>
     
 <div class="container">
     <h1>"Encriptado Ajj" por Gohan</h1>
